@@ -9,6 +9,10 @@ header {
     background-color: #333;
     color: #fff;
     padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 header .container {
@@ -36,6 +40,46 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    padding: 0.5em;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+#hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 5em 0;
+    margin-top: 60px;
+}
+
+#hero .container {
+    padding: 2em;
+}
+
+#hero h2 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+#hero p {
+    font-size: 1.2em;
+}
+
+.btn {
+    background-color: #e8491d;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #cf3e1b;
 }
 
 .container {
@@ -69,6 +113,22 @@ h2 {
 .social-links li {
     display: inline;
     margin-right: 1em;
+}
+
+.social-icon {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.social-icon.twitter { background-color: #1da1f2; }
+.social-icon.instagram { background-color: #c13584; }
+.social-icon.youtube { background-color: #ff0000; }
+
+.social-icon:hover {
+    opacity: 0.8;
 }
 
 footer {
